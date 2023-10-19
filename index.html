@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- 3rd party scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!--  Custom styling -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | Entertainment web app</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="Entertainment-web-app logo" />
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav--list">
+          <li class="list-item">
+            <img src="assets/icon-nav-home.svg" alt="" />
+          </li>
+          <li class="list-item">
+            <img src="assets/icon-nav-movies.svg" alt="" />
+          </li>
+          <li class="list-item">
+            <img src="assets/icon-nav-tv-series.svg" alt="" />
+          </li>
+          <li class="list-item">
+            <img src="assets/icon-nav-bookmark.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+      <div class="user-icon">
+        <img src="assets/image-avatar.png" alt="user icon" />
+      </div>
+    </header>
+    <form action="" class="main-form" autocomplete="off">
+      <img src="assets/icon-search.svg" alt="search icon" />
+      <label for="main.input"></label>
+      <input
+        type="text"
+        id="main-input"
+        name="main-input"
+        placeholder="Search for movies or TV series"
+      />
+    </form>
+    <!-- Search for movies or TV series Trending -->
+    <div class="container active home">
+      <section class="section trending">
+        <h2 class="heading-large">Trending</h2>
+        <div class="trending-container">
+          <!-- <figure class="movie-item lg">
+            <div class="bookmark">
+                <ion-icon class="bookmark--icon" name="bookmark-outline"></ion-icon>
+                <ion-icon class="bookmark--icon hidden" name="bookmark"></ion-icon>
+            </div>
+            <img
+              src="assets/thumbnails/the-great-lands/regular/large.jpg"
+              alt=""
+              class="movie-img background"
+            />
+            <figcaption>
+              <ul class="movie-properties">
+                <li class="movie-property">
+                  <img src="assets/icon-category-movie.svg" alt="" />
+                  <p>Movie</p>
+                </li>
+                <li class="movie-property">
+                  <img src="assets/icon-category-movie.svg" alt="" />
+                  <p>Movie</p>
+                </li>
+                <li class="movie-property">
+                  <img src="assets/icon-category-movie.svg" alt="" />
+                  <p>Movie</p>
+                </li>
+              </ul>
+              <h3 class="heading-medium md">Beyond Earth</h3>
+            </figcaption> 
+          </figure>-->
+        </div>
+      </section>
+      <section class="section recommended">
+        <h2 class="heading-large">Recommended for you</h2>
+        <div class="recommended-container">
+          <!-- 
+            <figure class="movie-item sm">
+            <div class="bookmark">
+                <ion-icon class="bookmark--icon" name="bookmark-outline"></ion-icon>
+                <ion-icon class="bookmark--icon hidden" name="bookmark"></ion-icon>
+            </div>
+            <img
+              src="assets/thumbnails/the-great-lands/regular/small.jpg"
+              alt=""
+              class="movie-img"
+            />
+            <figcaption>
+              <ul class="movie-properties">
+                <li class="movie-property">
+                  <p>2019</p>
+                </li>
+                <li class="movie-property">
+                  <img src="assets/icon-category-movie.svg" alt="" />
+                  <p>Movie</p>
+                </li>
+                <li class="movie-property">
+                  <p>E</p>
+                </li>
+              </ul>
+              <h3 class="heading-medium">Dark Side of the Moon</h3>
+            </figcaption>
+          </figure> 
+        --></div>
+      </section>
+    </div>
+    <div class="container movies">
+      <section class="section trending">
+        <h2 class="heading-large">Movies</h2>
+        <div class="recommended-container"></div>
+      </section>
+    </div>
+    <div class="container tv-shows">
+      <section class="section trending">
+        <h2 class="heading-large">TV Shows</h2>
+        <div class="recommended-container"></div>
+      </section>
+    </div>
+    <div class="container bookmarked">
+      <section class="section trending">
+        <h2 class="heading-large">Bookmarked Movies</h2>
+        <div class="recommended-container"></div>
+      </section>
+      <section class="section trending">
+        <h2 class="heading-large">Bookmarked TV Series</h2>
+        <div class="recommended-container"></div>
+      </section>
+    </div>
+    <div class="container search">
+      <section class="section trending">
+        <h2 class="heading-large"></h2>
+        <div class="recommended-container"></div>
+      </section>
+    </div>
+    <!-- Display trending shows -->
+
+    <!-- Recommended for you -->
+
+    <!-- Display recommended shows -->
+  </body>
+</html>
+
+<!-- 
+  <svg
+      width="12"
+      height="14"
+      xmlns="http://www.w3.org/2000/svg"
+      class="bookmark-icon"
+    >
+      <path
+        d="M10.61 0c.14 0 .273.028.4.083a1.03 1.03 0 0 1 .657.953v11.928a1.03 1.03 0 0 1-.656.953c-.116.05-.25.074-.402.074-.291 0-.543-.099-.756-.296L5.833 9.77l-4.02 3.924c-.218.203-.47.305-.756.305a.995.995 0 0 1-.4-.083A1.03 1.03 0 0 1 0 12.964V1.036A1.03 1.03 0 0 1 .656.083.995.995 0 0 1 1.057 0h9.552Z"
+      />
+    </svg>
+    <svg
+      width="12"
+      height="14"
+      xmlns="http://www.w3.org/2000/svg"
+      class="bookmark-icon"
+    >
+      <path
+        d="M10.61 0c.14 0 .273.028.4.083a1.03 1.03 0 0 1 .657.953v11.928a1.03 1.03 0 0 1-.656.953c-.116.05-.25.074-.402.074-.291 0-.543-.099-.756-.296L5.833 9.77l-4.02 3.924c-.218.203-.47.305-.756.305a.995.995 0 0 1-.4-.083A1.03 1.03 0 0 1 0 12.964V1.036A1.03 1.03 0 0 1 .656.083.995.995 0 0 1 1.057 0h9.552Z"
+      />
+    </svg>
+ -->
